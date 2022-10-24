@@ -1,0 +1,53 @@
+global_vars:
+  - name: "name"
+    type: "echo"
+    params:
+      echo: "Julian Störig"
+
+  - name: "email"
+    type: "echo"
+    params:
+      echo: "julian.stoerig@gmail.com"
+
+  - name: "time"
+    type: "date"
+    params:
+      format: "%H:%M"
+
+  - name: "date"
+    type: "date"
+    params:
+      format: "%Y-%m-%d"
+
+  - name: "iso"
+    type: "date"
+    params:
+      format: "%+"
+
+
+matches:
+  - trigger: ":name"
+    replace: "{{name}}"
+
+  - trigger: ":email"
+    replace: "{{email}}"
+
+  - trigger: ":date"
+    replace: "{{date}}"
+    
+  - trigger: ":time"
+    replace: "{{time}}"
+
+  - trigger: ":iso"
+    replace: "{{iso}}"
+
+  - trigger: ":kr"
+    replace: |
+              Kind Regards,
+              {{name}}
+
+  - trigger: ":shrug"
+    replace: "¯\\_(ツ)_/¯"
+    
+  - trigger: ":flip"
+    replace: "(ノ ゜Д゜)ノ ︵ ┻━┻"

@@ -1,0 +1,42 @@
+matches:
+  - trigger: ":info"
+    replace: |-
+              > [!info]
+              > $|$
+    force_clipboard: true
+
+  - trigger: ":sum"
+    replace: |-
+              > [!summary]
+              > $|$
+    force_clipboard: true
+
+  - trigger: ":warn"
+    replace: |-
+              > [!warn]
+              > $|$
+    force_clipboard: true
+
+  - trigger: ":err"
+    replace: |-
+              > [!error]
+              > $|$
+    force_clipboard: true
+
+  - trigger: ":dan"
+    replace: |-
+              > [!danger]
+              > $|$
+    force_clipboard: true
+
+  - trigger: ":ev"
+    replace: "evergreen"
+
+  - trigger: ":src"
+    replace: "source"
+
+  - trigger: ":td"
+    replace: "todo"
+
+  - trigger: ":dn"
+    replace: "done"
