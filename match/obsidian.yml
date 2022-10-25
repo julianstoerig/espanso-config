@@ -11,6 +11,12 @@ matches:
               > $|$
     force_clipboard: true
 
+  - trigger: ":quo"
+    replace: |-
+              > [!quote] %% no title %%
+              > $|$
+    force_clipboard: true
+
   - trigger: ":warn"
     replace: |-
               > [!warn]
